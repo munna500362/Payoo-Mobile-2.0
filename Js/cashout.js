@@ -6,8 +6,20 @@ document.getElementById('btn-login-cashout').addEventListener('click', function(
 
     console.log("Cashout Amount :", cashoutNumber, "CashoutPin :", cashoutPin);
 
+    if(isNaN(cashoutNumber)){
+        alert('Please wright the right number.');
+        return;
+    }
+
+   
     if(cashoutPin === 1234){
         AvailableBalance = getTextFieldValueById('available-money');
+
+         if(cashoutNumber> AvailableBalance){
+            alert('Please check your Balance')
+            return;
+         }
+
         NewBalance = AvailableBalance-cashoutNumber;
         // console.log(NewBalance)
         document.getElementById('available-money').innerText = NewBalance;
