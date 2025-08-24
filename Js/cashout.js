@@ -12,6 +12,13 @@ document.getElementById('btn-login-cashout').addEventListener('click', function(
         // console.log(NewBalance)
         document.getElementById('available-money').innerText = NewBalance;
         
+        const div = document.createElement('div');
+        div.classList.add('bg-green-500', 'text-white', 'text-xl');
+        div.innerHTML = `
+        <h4>Cashout Histroy</h4>
+        <p>Cashout Balance: ${cashoutNumber}, New Balance: ${NewBalance}</p>
+        `
+        document.getElementById('Transaction-Section').appendChild(div);
     }
     
     else{

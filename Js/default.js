@@ -14,3 +14,12 @@ function getTextFieldValueById(id){
     return textNumberValue;
     
 }
+
+function showSectionById(id){
+     document.getElementById('admony-form').classList.add("hidden");
+     document.getElementById('cashout-form').classList.add('hidden');
+     document.getElementById('Transaction-Section').classList.add('hidden');
+    
+     document.getElementById(id).classList.remove("hidden")
+
+}

@@ -32,10 +32,10 @@
 
                     <!-- Admoney, Cashout, Transaction, Pay Bill Button -->
                     <div class="grid grid-cols-2 gap-1">
-                        <button class="btn btn-lg">Add Money</button>
-                        <button class="btn btn-lg">Cashout</button>
-                        <button class="btn btn-lg">Pay Bill</button>
-                        <button class="btn btn-lg">Transaction</button>  
+                        <button id="add-money-button" class="btn btn-lg">Add Money</button>
+                        <button id="cash-out-button" class="btn btn-lg">Cashout</button>
+                        <button id="pay-bill-button" class="btn btn-lg">Pay Bill</button>
+                        <button id="transaction-button" class="btn btn-lg">Transaction</button>  
                     </div>
                     
                     
@@ -44,7 +44,7 @@
 
                     <!-- Add Money Section Start -->
 
-                    <div class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
+                    <div id="admony-form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
                         <form class="card-body">
                             <div class="form-control">
                             <label class="label">
@@ -68,7 +68,7 @@
 
                     <!-- Cashout Section Start -->
 
-                    <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
+                    <div id="cashout-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-xl">
                         <form class="card-body">
                             <div class="form-control">
                             <label class="label">
@@ -90,10 +90,10 @@
 
                     <!-- Cashout Section End -->
 
-                    <div>
-                        
+                    <div id="Transaction-Section">
+                      <h2 class="text-2xl text-center space-y-5">Transection History</h2> 
                     </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -102,6 +102,8 @@
     
     <script src="Js/admoney.js"></script>
     <script src="js/cashout.js"></script>
+   <script src="Js/feature.js"></script>
     <script src="js/default.js"></script>
+     
 </body>
 </html>
